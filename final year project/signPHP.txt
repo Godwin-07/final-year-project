@@ -1,0 +1,34 @@
+<?php
+// Replace these variables with your actual database connection details
+$hostname = 'your_database_host';
+$username = 'your_database_username';
+$password = 'your_database_password';
+$database = 'your_database_name';
+
+// Create a database connection
+$connection = mysqli_connect($hostname, $username, $password, $database);
+
+// Check the connection
+if (!$connection) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+
+// Collect user input from the form
+$name = $_POST['name'];
+$username = $_POST['username'];
+$email = $_POST['email'];
+$phone = $_POST['phone'];
+$password =$_POST['password']; 
+
+// Insert user details into the database
+$query = "INSERT INTO users (name, username, email, phone, password) VALUES ('$name', '$username', '$email', '$phone', '$password')";
+
+if (mysqli_query($connection, $query)) {
+    echo "Registration successful!";
+} else {
+    echo "Error: " . $query . "<br>" . mysqli_error($connection);
+}
+
+// Close the database connection
+mysqli_close($connection);
+?>
