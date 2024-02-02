@@ -1,0 +1,40 @@
+<img src="designs/Capture 3.jpg">
+
+<script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.526/build/spline-viewer.js"></script>
+<spline-viewer url="https://prod.spline.design/EfCVIMqyumaNK9fd/scene.splinecode"></spline-viewer>
+
+<div class="text-container">
+         <p>No nation can prosper without education</p>
+      </div>
+
+   * glow effect *
+   box-shadow: rgba(72, 135, 202, 0.8) 0 0 90px 33px;  
+
+   *color pallet*
+   ffffff
+   01427a
+   01b3ef
+   afafaf
+   e14177
+   6c6c6c
+   0c0c0d
+   6dcffb
+
+   #121212
+  *color pallet* 
+
+  *fonts*
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+
+font-family: 'Inter', sans-serif;
+  *fonts* 
+
+  *glow effect for png*
+  -webkit-filter: drop-shadow(12px 12px 7px rgba(253, 253, 253, 0.5));
+   filter: drop-shadow(12px 12px 7px rgba(254, 253, 253, 0.5));
+  *glow effect for png*
+
+*smooth responsive transition*
+transition: all 1s;
