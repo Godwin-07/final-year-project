@@ -6,7 +6,7 @@ body
 /*----------nav bar(start)---------------*/
 header
 {
-    background:#121212;
+    background:#1c1c1c;
     border-radius: 15px;
 }
 nav
@@ -36,7 +36,7 @@ a:hover
 }
 li
 {
- font-size: large;
+ font-size: 17px;
  cursor: pointer;   
 }
 .signup
@@ -66,7 +66,7 @@ li
             width: 99%;
             padding: 0%;
             min-height: 800px;  
-            background-image: url(Capture4.JPG); 
+            background-image: url(Capture3.JPG); 
             background-position: center; 
             align-self: center;
             filter: blur(8px);
@@ -75,13 +75,12 @@ li
 
 .landing-pg
 {
-    margin-top: 10px;
+    margin-top: 05px;
     display: flex;
     align-items: center;  
-    justify-content: space-between;
     justify-content: space-around;
-    max-height: 800px;  
-    background-color: rgba(0, 0, 0, 0.485);
+    max-height: 780px;  
+    background-color: rgba(0, 0, 0, 0.422);
     
     border: 3px;
     border-style: solid;
@@ -104,18 +103,26 @@ li
 .text-container
 {
     font-family: Arial;
-    font-size: 74px; 
-    font-weight: bolder;
+    font-size: 56px; 
+    font-weight: bold;
     max-width: 700px;
     text-align: left;
     color: #ffffff;
     
-    border: 3px;
+    margin-bottom: 30px;
+    
 }
-#p2
+.p1
 {
-    font-size: 20px;
+    margin: 0%;
+    margin-left: 2%;
+}
+.p2
+{
+    font-size: 18px;
     font-weight: lighter;
+    margin-top: 0%;
+    margin-left: 2%;
 }
 .learn
 {
@@ -124,6 +131,7 @@ li
     border-radius: 7px;
     background-color: rgb(225, 65, 119);
     color:#000000;
+    margin-left: 2%;
     
     cursor: pointer;
     font-size: 35px;
@@ -144,15 +152,12 @@ li
     border-style: solid;
     
 }
-.learn1
-{
-    align-self: baseline;   
-}
 #singnup
 {
     font-size: 35px;
     color: #000000;
-    margin-left: 10px;   
+    margin-left: 10px;
+    margin-top: 10px;   
     padding: 2px 10px;
     transition: 400ms;
 }
@@ -176,11 +181,13 @@ li
 }
 .scene-container
 {
-    min-height: 700px;
-    min-width: 670px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 619px;
+    min-width: 630px;
     transition: 600ms;
     
-    border: 3px;
 }
 .scene-container:hover
 {
@@ -204,7 +211,7 @@ li
     justify-content: space-around;
     align-items: center;
     padding: 10px;
-    margin-top: 10px;
+    margin-top: 05px;
     background-color:  #010e1a;
     ;
 }
@@ -229,6 +236,18 @@ li
     margin: 10px;
     max-width: 76%;
 }
+
+.snipet2_extra
+{
+   /* border: 3px;
+    border-style: solid;*/
+
+    display: none;
+    justify-content: space-between;
+    margin: 10px;
+    max-width: 76%;
+}
+
 .snipet_3
 {
    /* border: 3px;
@@ -248,6 +267,17 @@ li
         justify-content: center;
         align-items: center;
     }
+    .snipet_2
+    {
+        display: none;
+    }
+    .snipet2_extra
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 .snipet_img
 {
@@ -255,8 +285,8 @@ li
     border-style: solid;*/
 
     z-index: 0;
-    max-width: 350px;
-    max-height: 350px;
+    max-width: 300px;
+    max-height: 300px;
     margin: 10px;
    -webkit-filter: drop-shadow(20px 20px 7px #6dcffb);
    filter: drop-shadow(10px 10px 25px #7193a3);
@@ -285,7 +315,7 @@ li
     opacity: 100%;
 }
 
-.text_s1,.text_s2,.text_s3
+.text_s1,.text_s2,.text_s3,.text2_extra
 {
    /* border: 3px;
     border-style: solid;*/
@@ -293,7 +323,7 @@ li
     
     max-width: 100%;
     margin: 10px;
-    font-size: 20px;
+    font-size: 17px;
     color: #ffffff;
     text-align:right ; 
     align-self: center;   
@@ -302,9 +332,15 @@ li
 {
     text-align:left ; 
 }
+
+.text2_extra
+{
+    text-align:left ; 
+}
+
 @media(max-width:1200px) 
 {
-    .text_s1,.text_s2,.text_s3
+    .text_s1,.text_s3,.text2_extra
     {
         text-align:center;
     }
@@ -326,7 +362,7 @@ footer {
 }
 
 .footer-distributed {
-    background-color: #121212;
+    background-color: #1c1c1c;
     box-sizing: border-box;
     width: 100%;
     text-align: left;

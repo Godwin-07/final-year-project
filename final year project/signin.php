@@ -5,7 +5,7 @@
     </head>
     <body>
     <div class="container">
-      <h1 class="form-title">Registration</h1>
+      <h2 class="form-title">Registration</h2>
         <form class="form" method="post">
         <div class="main-user-info">
           <div class="user-input-box">
@@ -34,6 +34,9 @@
           </div>
           <div><input class="submit-btn" type="submit" name="submit">
         </div> 
+        <p>if you already have an account 
+          <a href="#">login here</a></p>
+        </div>
         </form>
         </div>
         <?php

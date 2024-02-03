@@ -5,7 +5,7 @@
     </head>
     <body>
     <div class="container">
-      <h1 class="form-title">Log in</h1>
+      <h2 class="form-title">Log in</h2>
         <form class="form" action="">
         <div class="main-user-info">
           <div class="user-input-box">
@@ -18,6 +18,9 @@
           </div>
           <div><input class="submit-btn" type="submit" name="submit">
         </div> 
+        <p>if you don't have an account 
+          <a href="#">register here</a></p>
+        </div>
         </form>
         </div>
     </body>

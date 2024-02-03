@@ -1,6 +1,6 @@
 body
 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Arial;
     background-image: url(3DPaths1.jpg);
     max-width: 99%;
     max-height: 100%;
@@ -41,14 +41,41 @@ body
     max-width: 100%;
     justify-content: center;
     align-items: center;
-    padding: 0.5% 0%;
+    padding: 0.0% 0%;
     backdrop-filter: blur(10px);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
     
 }
+
+.container
+{
+    border: 1px;
+    border-style: solid;
+    border-radius: 15px;
+    border-color: white;
+
+    display: flex;
+    flex-direction: column;
+    max-height: 100%;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 0.0% 0%;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    
+}
+
 .form-title
 {
     color:white;
+}
+p{
+    margin: 0%;
+}
+a:hover
+{
+    cursor: pointer;
 }
 .main-user-info
 {
@@ -63,8 +90,8 @@ body
 {
     display: flex;
     flex-direction: column;
-    font-size: 20px;
-    gap: 3px;
+    font-size: 17px;
+    gap: 2px;
     color: white;
 }
 input
@@ -75,8 +102,8 @@ input
     border-color: white;
 
     background: transparent;
-    padding: 10px 20px;
-    font-size: large;
+    padding: 7px 14px;
+    font-size: 18px;
 }
 input::placeholder
 {
@@ -87,7 +114,7 @@ input::placeholder
 {
     color: black;
     text-align: center;
-    padding: 10px 50px;
+    padding: 8px 46px;
     background-color: white;
     transition: 400ms;
 }
@@ -95,7 +122,8 @@ input::placeholder
 {
     transition: 400ms;
     transform: translate(0px, -4px) ;
-    transform: scale(105%);
+    transform: scale(103%);
     color: white;
     background-color: black;
+    cursor: pointer;
 }
