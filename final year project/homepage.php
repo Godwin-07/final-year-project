@@ -15,8 +15,8 @@
             <li><a href="#">About</a></li>
             <li><a href="#">Schemes</a></li>
             <li><a href="#">Contacts</a></li>
-            <li><a href="#">Admin</a></li>
-            <button class="signup" href="#">Sign up</button>
+            <li><a href="admin.php">Admin</a></li>
+           <a href="signin.php"> <button class="signup" href="#">Sign up</button></a>
            </ul>
        </nav> 
     </header>
@@ -34,7 +34,7 @@
       
       <div class="learn1">
          <button class="learn">Learn more</button>
-         <button class="signup" id="singnup" href="#">Sign up</button>
+         <a href="signin.php"><button class="signup" id="singnup">Sign up</button></a>
       </div>
         </div>
         <div class="content_r">

@@ -19,7 +19,7 @@
           <div><input class="submit-btn" type="submit" name="submit">
         </div> 
         <p>if you don't have an account 
-          <a href="#">register here</a></p>
+          <a href="signin.php">register here</a></p>
         </div>
         </form>
         </div>
