@@ -35,7 +35,7 @@
           <div><input class="submit-btn" type="submit" name="submit">
         </div> 
         <p>if you already have an account 
-          <a href="#">login here</a></p>
+          <a href="login.php">login here</a></p>
         </div>
         </form>
         </div>

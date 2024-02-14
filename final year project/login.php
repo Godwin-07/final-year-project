@@ -18,8 +18,9 @@
           </div>
           <div><input class="submit-btn" type="submit" name="submit">
         </div> 
-       <center> <p>if you don't have an account<br> 
-          <a href="#">register here</a></p></center>
+       <center><p>if you don't have an account<br> 
+          <a href="signin.php">register here</a></p></center>
+    
         </div>
         </form>
         </div>
