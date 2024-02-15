@@ -25,3 +25,42 @@
         </div>
     </body>
 </html>
+
+<?php
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
+    $servername = 'localhost';
+    $user_name = 'root';
+    $pass_word = '';
+    $dbname = 'test';
+
+    $conn = new mysqli($servername, $user_name, $pass_word, $dbname);
+
+    // Check the connection
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+}
+if(isset($_POST['submit']))
+        {
+          $LG_username=$_POST['username'];
+          $LG_password=$_POST['password'];
+        
+        
+// Basic input validation - you should implement more robust validation
+if (!empty($username) && !empty($password))
+{
+    $query = "SELECT * FROM test(username,password) WHERE (username,password == '$LG_username','$LG_password')";
+
+    if ($conn->query($query) === TRUE) {
+        echo '<script>alert("Login successfull !"); window.location.href = "homepage.php";</script>';
+        exit();
+    } else {
+        echo "Error: " . $query . "<br>" . $conn->error;
+    }
+} else {
+    echo "Please fill in all the fields and make sure the passwords match.";
+}
+
+$conn->close();
+}
+?>
