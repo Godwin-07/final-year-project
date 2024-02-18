@@ -6,21 +6,8 @@
     <link rel="stylesheet" href="main.css">
     </head>
  <body>
-   <!--------------Nav bar(start)------------>
-    <header>
-       <nav>
-         <img src="logos/1.5(edited).png"
-          style="height: 50px; width:150px;padding-left:20px;">
-         <ul class="navlinks"> 
-            <li><a href="#">About</a></li>
-            <li><a href="#">Schemes</a></li>
-            <li><a href="#">Contacts</a></li>
-            <li><a href="admin.php">Admin</a></li>
-           <a href="signin.php"> <button class="signup" href="#">Sign up</button></a>
-           </ul>
-       </nav> 
-    </header>
-   <!--------------Nav bar(end)------------>
+    
+ <?php include 'nav.php';?>
 
    <!--------------Landing page(start)------------>
  
@@ -95,55 +82,6 @@
    </div>
    <!--------------Snippets(end)------------>
 
-   <!--------------Footer(start)------------>
-
-   <footer class="footer-distributed">
-    <div class="footer-left">
-    <h3>Scholarship<span>Management</span></h3>
-
-    <p class="footer-links">
-        <a href="#">Home</a>
-        |
-        <a href="#">About</a>
-        |
-        <a href="#">Contact</a>
-        |
-        <a href="#">Schemes</a>
-    </p>
-
-    <p class="footer-company-name">Copyright © 2021 <strong>Scholarship Management</strong> All rights reserved</p>
-</div>
-
-<div class="footer-center">
-    <div>
-        <i class="fa fa-map-marker" aria-hidden="true"></i>
-        <p><span>Chennai</span>
-            Tamil Nadu</p>
-    </div>
-
-    <div>
-        <i class="fa fa-phone"></i>
-        <p>+91 74**9**258</p>
-    </div>
-    <div>
-        <i class="fa fa-envelope"></i>
-        <p><a href="mailto:sagar00001.co@gmail.com">xyz@gmail.com</a></p>
-    </div>
-</div>
-<div class="footer-right">
-    <p class="footer-company-about">
-        <span>About the company</span>
-        <strong>Scholarship Management System</strong> is a Web Application where you can authorize and get scholarships.
-    </p>
-    <div class="footer-icons">
-        <a href="#"><i class="fa fa-facebook"></i></a>
-        <a href="#"><i class="fa fa-linkedin"></i></a>
-        <a href="#"><i class="fa fa-twitter"></i></a>
-    </div>
-</div>
-</footer>
-
-   <!--------------Footer(end)--------------->
-
+   <?php include 'footer.php';?>
  </body>    
 </html>

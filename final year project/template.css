@@ -1,0 +1,47 @@
+#temp
+{
+    background-color: rgb(231, 231, 231);
+}
+.h 
+{
+    padding: 10px;
+    font-family: Arial;
+    font-size: 20px;
+}
+.table
+{
+    border: 2px;
+    border-style: solid;
+    border-color: green;
+
+   /* height: 500px;*/
+    max-width: 1fr;
+    padding: 0% 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.filters
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.list
+{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+.schemes
+{   
+    border: 1px;
+    border-style: solid;
+    border-color: red;
+
+    width: 900px;
+    min-height: 150px;
+}
