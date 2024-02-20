@@ -21,8 +21,7 @@
             <div class="schemes"></div>
             <div class="schemes"></div>
         </div>
-    </div>
-    
+        </div>
 </body>
 
 </html>
