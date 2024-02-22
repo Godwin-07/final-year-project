@@ -6,7 +6,7 @@
     <body>
     <div class="container">
       <h2 class="form-title">Registration</h2>
-        <form class="form" action="functions/authcode.php" method="post">
+        <form class="form" method="POST">
         <div class="main-user-info">
           <div class="user-input-box">
             <label for="fullName">Full Name</label>

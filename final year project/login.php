@@ -6,7 +6,7 @@
     <body>
     <div class="container">
       <h2 class="form-title">Log in</h2>
-        <form class="form" action="">
+        <form class="form" method="post">
         <div class="main-user-info">
           <div class="user-input-box">
             <label for="username">Username</label>
@@ -34,34 +34,35 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $pass_word = '';
     $dbname = 'test';
 
-    $conn = new mysqli($servername, $user_name, $pass_word, $dbname);
+    $con = new mysqli($servername, $user_name, $pass_word, $dbname);
 
     // Check the connection
-    if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
+    if ($con->connect_error) 
+    {
+        die("Connection failed: " . $con->connect_error);
     }
 }
 if(isset($_POST['submit']))
         {
-          $LG_username=$_POST['username'];
-          $LG_password=$_POST['password'];
+          $uname = $_POST['username'];
+          $pasword = $_POST['password'];
         
         
 // Basic input validation - you should implement more robust validation
-if (!empty($username) && !empty($password))
+if (!empty($uname) && !empty($pasword))
 {
-    $query = "SELECT * FROM test(username,password) WHERE (username,password == '$LG_username','$LG_password')";
+  $query = mysqli_query($con,"SELECT * FROM test WHERE username='$uname' AND password = '$pasword'");
 
-    if ($conn->query($query) === TRUE) {
+    if($query ->num_rows > 0) {
         echo '<script>alert("Login successfull !"); window.location.href = "homepage.php";</script>';
         exit();
     } else {
-        echo "Error: " . $query . "<br>" . $conn->error;
+        echo "Error: " . $query . "<br>" . $con->error;
     }
 } else {
-    echo "Please fill in all the fields and make sure the passwords match.";
+    echo '<script> alert("Please fill in all the fields and make sure the passwords match."); window.location.href = "homepage.php";</script>';
 }
 
-$conn->close();
+$con->close();
 }
 ?>
