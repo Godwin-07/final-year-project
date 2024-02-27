@@ -4,6 +4,8 @@
         <link rel="stylesheet" href="signin.css">
     </head>
     <body>
+      <?php include 'nav.php'; ?> 
+    <div class="bdy"> 
     <div class="container">
       <h2 class="form-title">Log in</h2>
         <form class="form" method="post">
@@ -20,10 +22,10 @@
         </div> 
        <center><p>if you don't have an account<br> 
           <a href="signin.php">register here</a></p></center>
-    
         </div>
         </form>
         </div>
+     </div>
     </body>
 </html>
 
@@ -57,7 +59,7 @@ if (!empty($uname) && !empty($pasword))
         echo '<script>alert("Login successfull !"); window.location.href = "homepage.php";</script>';
         exit();
     } else {
-        echo "Error: " . $query . "<br>" . $con->error;
+        echo '<script>alert("Login failed !"); window.location.href = "login.php";</script>';
     }
 } else {
     echo '<script> alert("Please fill in all the fields and make sure the passwords match."); window.location.href = "homepage.php";</script>';

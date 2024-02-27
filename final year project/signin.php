@@ -4,6 +4,8 @@
         <link rel="stylesheet" href="signin.css">
     </head>
     <body>
+    <?php include 'nav.php'; ?> 
+    <div class="bdy">
     <div class="container">
       <h2 class="form-title">Registration</h2>
         <form class="form" method="POST">

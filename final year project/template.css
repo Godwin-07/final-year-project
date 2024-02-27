@@ -27,6 +27,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    
 }
 .list
 {
@@ -34,14 +35,16 @@
     height: 500px;
     display: flex;
     flex-direction: column;
-    overflow-y: scroll;
+    overflow-y:scroll;
 }
 .schemes
 {   
+    display: flex;
+    /*flex-direction: column;*/
     border: 1px;
     border-style: solid;
     border-color: red;
 
     width: 900px;
-    min-height: 150px;
+    min-height: 150px; 
 }

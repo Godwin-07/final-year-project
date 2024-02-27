@@ -4,9 +4,11 @@
         <link rel="stylesheet" href="signin.css">
     </head>
     <body>
+    <?php include 'nav.php'; ?> 
+    <div class="bdy">
     <div class="container">
       <h2 class="form-title">Admin Log in</h2>
-        <form class="form" action="">
+        <form class="form" method="POST">
         <div class="main-user-info">
           <div class="user-input-box">
             <label for="username">Username</label>
@@ -25,3 +27,43 @@
         </div>
     </body>
 </html>
+
+<?php
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
+    $servername = 'localhost';
+    $user_name = 'root';
+    $pass_word = '';
+    $dbname = 'scholarshipmanagement';
+
+    $con = new mysqli($servername, $user_name, $pass_word, $dbname);
+
+    // Check the connection
+    if ($con->connect_error) 
+    {
+        die("Connection failed: " . $con->connect_error);
+    }
+}
+if(isset($_POST['submit']))
+        {
+          $uname = $_POST['username'];
+          $pasword = $_POST['password'];
+        
+        
+// Basic input validation - you should implement more robust validation
+if (!empty($uname) && !empty($pasword))
+{
+  $query = mysqli_query($con,"SELECT * FROM admin WHERE ad_username='$uname' AND ad_password = '$pasword'");
+
+    if($query ->num_rows > 0) {
+        echo '<script>alert("Login successfull !"); window.location.href = "homepage.php";</script>';
+        exit();
+    } else {
+        echo '<script>alert("Login failed !"); window.location.href = "admin.php";</script>';
+    }
+} else {
+    echo '<script> alert("Please fill in all the fields and make sure the passwords match."); window.location.href = "homepage.php";</script>';
+}
+
+$con->close();
+}
+?>
