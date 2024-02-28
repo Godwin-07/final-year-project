@@ -2,21 +2,22 @@ body
 {
    background-color:#ffffff;
     font-family: Arial;
-    margin: 2px;
+    margin: 0px;
 }
 /*----------nav bar(start)---------------*/
 header
 {
     background:#1c1c1c;
-    border-radius: 15px;
+    border-radius: 0px;
     margin: 0px;
+    min-width: 100%;
 }
 nav
 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0%;
+    padding: 0.2%;
 }
 a
 {
@@ -77,7 +78,8 @@ li
 
 .landing-pg
 {
-    margin-top: 05px;
+   /* margin-top: 05px;*/
+    margin: 3px 5px 0px 5px;
     display: flex;
     align-items: center;  
     justify-content: space-around;
@@ -203,7 +205,7 @@ li
     justify-content: space-around;
     align-items: center;
     padding: 10px;
-    margin-top: 05px;
+    margin-top: 3px;
     background-color:  #010e1a;
     ;
 }
@@ -341,8 +343,8 @@ footer {
     text-align: left;
     font: bold 16px sans-serif;
     padding: 50px 50px 60px 50px;
-    margin-top: 5px;
-    border-radius: 10px;
+    margin-top: 2px;
+    border-radius: 0px;
 }
 
 .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
