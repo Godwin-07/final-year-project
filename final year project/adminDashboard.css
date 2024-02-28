@@ -1,0 +1,19 @@
+body
+{
+font-family: Arial;
+}
+
+.main
+{
+    display:flex;
+}
+
+.side_bar
+{
+    max-width: 20%;
+}
+
+.view
+{
+    max-width: 80%;
+}
