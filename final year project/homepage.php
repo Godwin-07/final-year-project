@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">  
     <link rel="stylesheet" href="main.css">
     </head>
- <body>
+ <body style="margin: 2px;">
     
  <?php include 'nav.php';?>
 

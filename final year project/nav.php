@@ -1,4 +1,7 @@
-<head><link rel="stylesheet" href="main.css"></head>
+<head>
+   <link rel="stylesheet" href="main.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
 <header>
        <nav>
          <img src="logos/1.5(edited).png"

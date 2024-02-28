@@ -2,19 +2,21 @@ body
 {
    background-color:#ffffff;
     font-family: Arial;
+    margin: 2px;
 }
 /*----------nav bar(start)---------------*/
 header
 {
     background:#1c1c1c;
     border-radius: 15px;
+    margin: 0px;
 }
 nav
 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.5%;
+    padding: 0%;
 }
 a
 {
