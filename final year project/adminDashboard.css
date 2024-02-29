@@ -2,13 +2,11 @@ body
 {
 font-family: Arial;
 }
-
 .main
 {
     display:flex;
     justify-content: center;
 }
-
 .side_bar
 {
     background-color: aqua;
@@ -23,14 +21,13 @@ font-family: Arial;
 button
 {
     border-style: none;
-    padding: 5px;
+    padding: 5px 0px 5px 0px;
 }
-
 .view
 {
     background-color: orange;
     
-
+    
     min-width: 80%;
     max-height: 100%;
 }
