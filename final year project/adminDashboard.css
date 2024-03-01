@@ -7,7 +7,7 @@ font-family: Arial;
     display:flex;
     justify-content: center;
     background-color: grey;
-    height: 700px;
+    height: 580px;
 }
 .side_bar
 {
@@ -20,36 +20,91 @@ font-family: Arial;
     display: flex;
     flex-direction: column;
 }
-.btn
+.btun
 {
     display: flex;
     flex-direction: column;
-    min-height: 5%;
+    min-height: 10%;
+    display: flex;
 
 }
 .menu
 {
     
-    height: 100%;
+    height: 90%;
     width: 100%;
     padding-right: 70%;
     padding-left:11% ;
+    border-style: none;
+
     
     
     background-color: transparent;
     cursor: pointer;
     transition: 300ms;
 }
-button:hover
+hr{
+    height: .1px;
+}
+.menu:hover
 {
     transition: 300ms;
     background-color: rgb(1, 196, 196);
 }
 .view
 {
-    background-color: orange;
-    
+    background-color: rgb(255, 255, 255);
     
     min-width: 80%;
     max-height: 100%;
 }
+/*-------------Schemes---------------------*/
+.h 
+{
+    padding: 10px;
+    font-family: Arial;
+    font-size: 20px;
+}
+.table
+{
+    border: 2px;
+    border-style: solid;
+    border-color: green;
+
+   /* height: 500px;*/
+    max-width: 1fr;
+    padding: 0% 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.filters
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+.list
+{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    overflow-y:scroll;
+}
+.schemes
+{   
+    display: flex;
+    /*flex-direction: column;*/
+    border: 1px;
+    border-style: solid;
+    border-color: red;
+
+    width: 800px;
+    min-height: 150px; 
+}
+
+
+/*-------------Schemes---------------------*/
