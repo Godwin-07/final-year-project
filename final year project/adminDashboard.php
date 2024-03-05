@@ -81,8 +81,9 @@ if ($sql->num_rows > 0) {
     style="display:flex;
             justify-content:center;
             align-items:center;">
-    <a href="#">
     <button
+    id="<?php echo $row['sch_id'] ?>"
+    onclick="reply_click(this.id)"
     style="padding: 7px 15px;
     border-style: none;
     border-radius: 7px;
@@ -90,8 +91,9 @@ if ($sql->num_rows > 0) {
     background-color: rgb(1, 179, 239);
     color:#0c0c0d;
     cursor: pointer;"
-    >Remove</button></a>
+    >Remove</button>
     </div>
+    
     </div>
     <?php 
             $i++;
@@ -104,6 +106,18 @@ if ($sql->num_rows > 0) {
        
     </div>
     </div>
+    <script type="text/javascript">
+        function reply_click(clicked_id)
+        {
+            alert(clicked_id)
+            
+            <?php
+                $scheme_id="<script>document.write(clicked_id)</script>";
+                $delete_query = mysqli_query($conn,"DELETE FROM schemes WHERE sch_id ='$scheme_id'");
+            ?>
+            alert('Scheme Deleted');
+        }
+    </script>
 <center>
 <button>Add</button><button>Add</button>
 </center>
