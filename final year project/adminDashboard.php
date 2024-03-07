@@ -49,6 +49,7 @@ if ($sql->num_rows > 0) {
     while ($row = $sql->fetch_assoc()) 
     {
 ?>
+<form action="delete.php" method="get"></form>
     <div class="schemes" 
         style="font-family: Arial;
                 display:flex;
@@ -81,8 +82,8 @@ if ($sql->num_rows > 0) {
     style="display:flex;
             justify-content:center;
             align-items:center;">
-    <button
-    id="<?php echo $row['sch_id'] ?>"
+   <a href="delete.php?id=<?php echo $row['sch_id'] ?>"> <button
+    name="remove_btn" id="<?php echo $row['sch_id'] ?>"
     onclick="reply_click(this.id)"
     style="padding: 7px 15px;
     border-style: none;
@@ -91,7 +92,7 @@ if ($sql->num_rows > 0) {
     background-color: rgb(1, 179, 239);
     color:#0c0c0d;
     cursor: pointer;"
-    >Remove</button>
+    >Remove</button></a>
     </div>
     
     </div>
