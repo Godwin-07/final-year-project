@@ -116,5 +116,10 @@ hr{
      
 }
 
+#edit_page
+{
+    display: none;
+    justify-content: center;
+}
 
 /*-------------Schemes---------------------*/

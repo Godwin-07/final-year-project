@@ -1,0 +1,85 @@
+
+  /* Add some margin and padding to the container */
+  .container {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+
+  /* Add a custom font and center the title */
+  .form-title {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+
+  /* Style the form element */
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Style the main user info section */
+  .main-user-info {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  /* Style the user input box */
+  .user-input-box {
+    width: 45%;
+    margin: 10px 0;
+  }
+
+  /* Style the label element */
+  label {
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+  }
+
+  /* Style the input and textarea elements */
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #333;
+    outline: none;
+  }
+
+  /* Add some focus effect */
+  input:focus, textarea:focus {
+    border-color: #66ccff;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.1), 0 0 5px rgba(102,204,255,0.5);
+  }
+
+  /* Style the submit button */
+  .submit-btn {
+    width: 80%;
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #66ccff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+  }
+
+  /* Add some hover effect */
+  .submit-btn:hover {
+    background-color: #3399ff;
+  }
+

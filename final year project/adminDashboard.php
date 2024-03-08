@@ -42,7 +42,7 @@ Menu</u></h><hr color="grey" width="200px">
 
 
     $sql = mysqli_query($conn,"SELECT * FROM schemes");
-    $i = 0; // Initialize the loop counter variable
+    $i = 0; //Initialize the loop counter variable
 if ($sql->num_rows > 0) {
     // Output data of each row
     while ($row = $sql->fetch_assoc()) 
@@ -123,11 +123,24 @@ if ($sql->num_rows > 0) {
     </div>
     </div>
 <center>
+
 <br>
-<button class="add_btn">Add</button>
+<button class="add_btn" onclick="ddd()">Add</button>
 </center>
+
+<br>
+<div id="edit_page">
+<iframe src="edit.php" id="edit_page" width="900" height="550"></iframe>
+</div>
+
         <!-------------------schemes------------------->
     </div>
     </div>
 </body>
 </html>
+<script type="text/javascript">
+    function ddd()
+    {
+        document.getElementById(edit_page).style.display="block";
+    }  
+</script>
