@@ -94,6 +94,20 @@ if ($sql->num_rows > 0) {
     cursor: pointer;">
     
     Remove</button></a>
+<hr width="0px">
+    <a href="edit.php?id=<?= $row['sch_id'] ?>"> <button
+    name="remove_btn" id="<?php echo $row['sch_id'] ?>"
+    
+    style="padding: 7px 15px;
+    border-style: none;
+    border-radius: 7px;
+    font-size: medium;
+    background-color: #e14177;
+    color:#0c0c0d;
+    cursor: pointer;">
+    
+    Edit</button></a>
+
     </div>
     
     </div>
@@ -109,7 +123,8 @@ if ($sql->num_rows > 0) {
     </div>
     </div>
 <center>
-<button>Add</button><button>Add</button>
+<br>
+<button class="add_btn">Add</button>
 </center>
         <!-------------------schemes------------------->
     </div>
