@@ -38,3 +38,6 @@ font-family: 'Inter', sans-serif;
 
 *smooth responsive transition*
 transition: all 1s;
+
+* for displaying website inside another wensite *
+<iframe src="#" width="400" height="400"></iframe>

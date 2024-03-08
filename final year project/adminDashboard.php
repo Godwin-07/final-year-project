@@ -42,7 +42,6 @@ Menu</u></h><hr color="grey" width="200px">
 
 
     $sql = mysqli_query($conn,"SELECT * FROM schemes");
-   // $result = $conn->query($sql);
     $i = 0; // Initialize the loop counter variable
 if ($sql->num_rows > 0) {
     // Output data of each row
@@ -60,7 +59,7 @@ if ($sql->num_rows > 0) {
                 display:flex;
                 flex-direction: column;
                 justify-content:space-around;
-                max-width:370px;">      
+                max-width:380px;">      
         <div 
         style=
         "font-size:25px;
@@ -82,17 +81,19 @@ if ($sql->num_rows > 0) {
     style="display:flex;
             justify-content:center;
             align-items:center;">
-   <a href="delete.php?id=<?php echo $row['sch_id'] ?>"> <button
+   
+   <a href="delete.php?id=<?= $row['sch_id'] ?>"> <button
     name="remove_btn" id="<?php echo $row['sch_id'] ?>"
-    onclick="reply_click(this.id)"
+    
     style="padding: 7px 15px;
     border-style: none;
     border-radius: 7px;
     font-size: medium;
     background-color: rgb(1, 179, 239);
     color:#0c0c0d;
-    cursor: pointer;"
-    >Remove</button></a>
+    cursor: pointer;">
+    
+    Remove</button></a>
     </div>
     
     </div>
@@ -107,38 +108,10 @@ if ($sql->num_rows > 0) {
        
     </div>
     </div>
-    <script type="text/javascript">
-        function reply_click(clicked_id)
-        {
-            alert(clicked_id)
-            var scheme_id = clicked_id;
-            <?php
-
-    $servername = 'localhost';
-    $user_name = 'root';
-    $pass_word = '';
-    $dbname = 'scholarshipmanagement';
-
-    $conn = new mysqli($servername, $user_name, $pass_word, $dbname);
-
-    // Check the connection
-    if ($conn->connect_error) 
-    {
-        die("Connection failed: " . $conn->connect_error);
-    }
-
-        $scheme_id="<script>document.write(scheme_id)</script>";
-        $delete_query = mysqli_query($conn,"DELETE FROM schemes WHERE sch_id ='$scheme_id'");
-        
-        ?>
-            alert('Scheme Deleted');
-        }
-    </script>
 <center>
 <button>Add</button><button>Add</button>
 </center>
         <!-------------------schemes------------------->
-        
     </div>
     </div>
 </body>
