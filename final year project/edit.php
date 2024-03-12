@@ -17,7 +17,7 @@ if ($conn->connect_error)
 { die("Connection failed: " . $conn->connect_error); }
     $id= $_GET['id'];
 
-    if(isset($_POST['submit']))
+    if(isset($_POST['edit_submit']))
     {
       $sch_name = $_POST['SchemeName'];
       $sch_id = $_POST['Schemeid'];

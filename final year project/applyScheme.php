@@ -2,8 +2,22 @@
   <link rel="stylesheet" href="schemes.css">
 </head>  
 <body>
+<?php
+
+$servername = 'localhost';
+$user_name = 'root';
+$pass_word = '';
+$dbname = 'scholarshipmanagement';
+
+$conn = new mysqli($servername, $user_name, $pass_word, $dbname);///
+// Check the connection
+if ($conn->connect_error) 
+{ die("Connection failed: " . $conn->connect_error); }
+    $id= $_GET['id'];
+    ?>
+
 <div class="container">
-      <h2 class="form-title">Add Scheme</h2>
+      <h2 class="form-title">Scholarship Applications</h2>
         <form class="form" method="POST">
         <div class="main-user-info">
           <div class="user-input-box">
@@ -12,7 +26,7 @@
           </div>
           <div class="user-input-box">
             <label for="username">Scheme id</label>
-            <input type="text" id="Schemeid" name="Schemeid" placeholder="Enter Scheme id"/>
+            <input type="text" id="Schemeid" name="Schemeid" value="<?php ?>" />
           </div>
           <div class="user-input-box">
             <label for="email">offeredby</label>
@@ -40,18 +54,8 @@
         </form>
         </div>
 
-        <?php
-
-$servername = 'localhost';
-$user_name = 'root';
-$pass_word = '';
-$dbname = 'scholarshipmanagement';
-
-$conn = new mysqli($servername, $user_name, $pass_word, $dbname);///
-// Check the connection
-if ($conn->connect_error) 
-{ die("Connection failed: " . $conn->connect_error); }
-    $id= $_GET['id'];
+        
+    <?php
 
     if(isset($_POST['edit_submit']))
     {

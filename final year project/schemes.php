@@ -9,12 +9,7 @@
     <br><br>
    <center> <div class="h">Schemes</div></center>
     <div class="table">
-        <div class="filters">
-            <div class="f1">
-                Scholarship Catogories
-                <input type="checkbox" name="catogories">
-            </div>
-        </div>  
+         
         <div class="list">
     <?php
 
@@ -72,7 +67,7 @@ if ($sql->num_rows > 0) {
     style="display:flex;
             justify-content:center;
             align-items:center;">
-    <a href="#">
+    <a href="applyScheme.php">
     <button
     style="padding: 7px 15px;
     border-style: none;
@@ -82,6 +77,7 @@ if ($sql->num_rows > 0) {
     color:#0c0c0d;
     cursor: pointer;"
     >Apply</button></a>
+
     </div>
     </div>
     <?php 

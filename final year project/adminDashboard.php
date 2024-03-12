@@ -125,7 +125,18 @@ if ($sql->num_rows > 0) {
 <center>
 
 <br>
-<button class="add_btn" onclick="ddd()">Add</button>
+<a href="addScheme.php?id=<?= $row['sch_id'] ?>"> <button
+    name="remove_btn" id="<?php echo $row['sch_id'] ?>"
+    
+    style="padding: 7px 15px;
+    border-style: none;
+    border-radius: 7px;
+    font-size: medium;
+    background-color: rgb(1, 179, 239);
+    color:#0c0c0d;
+    cursor: pointer;"
+
+    >Add</button></a>
 </center>
 
 <br>
