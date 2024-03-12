@@ -129,9 +129,7 @@ if ($sql->num_rows > 0) {
 </center>
 
 <br>
-<div id="edit_page">
-<iframe src="edit.php" id="edit_page" width="900" height="550"></iframe>
-</div>
+
 
         <!-------------------schemes------------------->
     </div>
