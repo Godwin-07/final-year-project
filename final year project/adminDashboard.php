@@ -95,7 +95,7 @@ if ($sql->num_rows > 0) {
     
     Remove</button></a>
 <hr width="0px">
-    <a href="edit.php?id1=<?= $row['sch_id']?>,?id2=<?=$row['offeredby']?>$row['description'],$row['start_date'],$row['last_date'],$row['eligibility'] ?>"> <button
+    <a href="edit.php?id=<?= $row['sch_id']?>"> <button
     name="edit_btn" id="<?php echo $row['sch_id'] ?>"
     
     style="padding: 7px 15px;

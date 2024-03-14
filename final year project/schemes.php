@@ -67,8 +67,8 @@ if ($sql->num_rows > 0) {
     style="display:flex;
             justify-content:center;
             align-items:center;">
-    <a href="applyScheme.php">
-    <button
+
+    <a href="applyScheme.php?id=<?= $row['sch_id'] ?>"><button
     style="padding: 7px 15px;
     border-style: none;
     border-radius: 7px;
