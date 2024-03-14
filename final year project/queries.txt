@@ -2,3 +2,6 @@ Query for Creating application table
 
 CREATE TABLE `scholarshipmanagement`.`applications` (`sch_id` VARCHAR(15) NOT NULL , `username` VARCHAR(20) NOT NULL , `name` VARCHAR(25) NOT NULL , `age` INT(3) NOT NULL , `email` VARCHAR(25) NOT NULL , `gender` VARCHAR(10) NOT NULL , `caste` VARCHAR(15) NOT NULL , `houseNo` INT(5) NOT NULL , `streetName` VARCHAR(15) NOT NULL , `city` VARCHAR(15) NOT NULL , `state` VARCHAR(15) NOT NULL , `country` VARCHAR(15) NOT NULL ) ENGINE = InnoDB;
 
+Query for Creating approvedApplication table
+
+CREATE TABLE `scholarshipmanagement`.`approvedapplications` (`sch_id` VARCHAR(15) NOT NULL , `username` VARCHAR(20) NOT NULL , `name` VARCHAR(25) NOT NULL , `age` INT(3) NOT NULL , `email` VARCHAR(25) NOT NULL , `gender` VARCHAR(10) NOT NULL , `caste` VARCHAR(15) NOT NULL , `houseNo` INT(5) NOT NULL , `streetName` VARCHAR(15) NOT NULL , `city` VARCHAR(15) NOT NULL , `state` VARCHAR(15) NOT NULL , `country` VARCHAR(15) NOT NULL ) ENGINE = InnoDB;

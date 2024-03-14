@@ -4,7 +4,7 @@
 <body>
 <div class="container">
       <h2 class="form-title">Add Scheme</h2>
-        <form class="form" method="POST">
+        <form class="form" method="post">
         <div class="main-user-info">
           <div class="user-input-box">
             <label for="schemeName">Scheme Name</label>
@@ -41,7 +41,7 @@
         </div>
 
 <?php
-
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
 $servername = 'localhost';
 $user_name = 'root';
 $pass_word = '';
@@ -50,14 +50,16 @@ $dbname = 'scholarshipmanagement';
 $conn = new mysqli($servername, $user_name, $pass_word, $dbname);
 // Check the connection
 if ($conn->connect_error) 
-{ die("Connection failed: " . $conn->connect_error); }
+{ 
+  die("Connection failed: " . $conn->connect_error); 
+  } }
    
   if(isset($_POST['add_submit']))
     {
       $sch_name = $_POST['SchemeName'];
       $sch_id = $_POST['Schemeid'];
-      $offeredby = $_POST['offeredby'];
       $description = $_POST['description'];
+      $offeredby = $_POST['offeredby'];
       $start_date = date($_POST['startDate']);
       $last_date = date($_POST['lastDate']);
       $eligiblity = $_POST['eligibility'];
@@ -65,7 +67,7 @@ if ($conn->connect_error)
 // Basic input validation - you should implement more robust validation
 if (!empty($sch_name) && !empty($sch_id) && !empty($offeredby) && !empty($description) && !empty($start_date) && !empty($last_date) && !empty($eligiblity)) 
 {
-$query = "INSERT INTO schemes(sch_name,sch_id,offeredby,description,start_date,last_date,eligiblity) VALUES ('$sch_name', '$sch_id', '$offeredby', '$description', '$start_date','$last_date','$eligiblity')";
+$query = "INSERT INTO `schemes`(`sch_name`, `sch_id`, `description`, `offeredby`, `start_date`, `last_date`, `eligibility`) VALUES ('$sch_name','$sch_id','$description','$offeredby','$start_date','$last_date','$eligiblity')";
 
 if ($conn->query($query) === TRUE) 
 {
@@ -73,7 +75,7 @@ if ($conn->query($query) === TRUE)
     exit();
 } 
 else {
-    echo "Error: " . $query . "<br>" . $conn->error;
+  echo '<script>alert("Scheme Added successfully!");</script>';
 }
 } 
 else 

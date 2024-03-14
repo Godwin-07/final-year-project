@@ -70,7 +70,7 @@ if ($conn->connect_error)
             <label for="country">Country</label>
             <input type="text" id="country" name="country" placeholder="Enter country Here"/>
           </div>
-          <div><input style="width:90px" class="submit-btn" type="submit" name="edit_submit">
+          <div><input style="width:90px" class="submit-btn" type="submit" name="apply_submit">
         </div> 
         </div>
         </form>
@@ -79,7 +79,7 @@ if ($conn->connect_error)
         
     <?php
 
-    if(isset($_POST['edit_submit']))
+    if(isset($_POST['apply_submit']))
     {
       $sch_id = $_POST['Schemeid'];
       $username = $_POST['username'];

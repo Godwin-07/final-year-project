@@ -12,8 +12,8 @@
 font-size:20px;
 padding:7px 0 0px 10px"><u>
 Menu</u></h><hr color="grey" width="200px">
-<button class="menu" onclick=" "><h4>Schemes</h4></button><hr color="grey" width="200px" >
-<button class="menu"><h4>Applications</h4></button><hr color="grey" width="200px" >
+<button class="menu"><h4>Schemes</h4></button><hr color="grey" width="200px" >
+<a href="applications.php"> <button class="menu"><h4>Applications</h4></button></a><hr color="grey" width="200px" >
 <button class="menu"><h4>Manage</h4></button><hr color="grey" width="200px" >
  </div>
     </div>
