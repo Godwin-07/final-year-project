@@ -15,7 +15,8 @@ $conn = new mysqli($servername, $user_name, $pass_word, $dbname);///
 // Check the connection
 if ($conn->connect_error) 
 { die("Connection failed: " . $conn->connect_error); }
-    $id= $_GET['id'];
+    $id= $_GET['id1'];
+    $oferby = $_GET['id2'];
 
     if(isset($_POST['edit_submit']))
     {
@@ -60,7 +61,7 @@ $conn->close();
           </div>
           <div class="user-input-box">
             <label for="email">offeredby</label>
-            <input type="text" id="offeredby" name="offeredby" placeholder="Enter offeredby"/>
+            <input type="text" id="offeredby" name="offeredby" value="<?php echo $oferby;?>" placeholder="Enter offeredby"/>
           </div>
           <div class="user-input-box">
             <label for="description">Description</label>
