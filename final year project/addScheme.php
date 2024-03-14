@@ -34,52 +34,55 @@
             <label for="eligibility">Eligibility</label>
             <textarea id="eligibility" name="eligibility" placeholder="Enter Eligibility Here" ></textarea>
           </div>
-          <div><input class="submit-btn" type="submit" name="edit_submit">
+          <div><input style="width:90px" class="submit-btn" type="submit" name="add_submit">
         </div> 
         </div>
         </form>
         </div>
 
-        <?php
+<?php
 
 $servername = 'localhost';
 $user_name = 'root';
 $pass_word = '';
 $dbname = 'scholarshipmanagement';
 
-$conn = new mysqli($servername, $user_name, $pass_word, $dbname);///
+$conn = new mysqli($servername, $user_name, $pass_word, $dbname);
 // Check the connection
 if ($conn->connect_error) 
 { die("Connection failed: " . $conn->connect_error); }
-    $id= $_GET['id'];
-
-    if(isset($_POST['edit_submit']))
+   
+  if(isset($_POST['add_submit']))
     {
       $sch_name = $_POST['SchemeName'];
       $sch_id = $_POST['Schemeid'];
       $offeredby = $_POST['offeredby'];
       $description = $_POST['description'];
-      $start_date = $_POST['startDate'];
-      $last_date = $_POST['lastDate'];
+      $start_date = date($_POST['startDate']);
+      $last_date = date($_POST['lastDate']);
       $eligiblity = $_POST['eligibility'];
         
 // Basic input validation - you should implement more robust validation
-if (!empty($name) && !empty($email) && !empty($username) && !empty($ph) && !empty($password) ) 
+if (!empty($sch_name) && !empty($sch_id) && !empty($offeredby) && !empty($description) && !empty($start_date) && !empty($last_date) && !empty($eligiblity)) 
 {
 $query = "INSERT INTO schemes(sch_name,sch_id,offeredby,description,start_date,last_date,eligiblity) VALUES ('$sch_name', '$sch_id', '$offeredby', '$description', '$start_date','$last_date','$eligiblity')";
 
-if ($conn->query($query) === TRUE) {
+if ($conn->query($query) === TRUE) 
+{
     echo '<script>alert("Scheme Added successfully!"); window.location.href = "adminDashboard.php";</script>';
     exit();
-} else {
+} 
+else {
     echo "Error: " . $query . "<br>" . $conn->error;
 }
-} else {
-echo "Please fill in all the fields and make sure the passwords match.";
+} 
+else 
+{
+  echo '<script>alert("Please fill in all the fields.!");</script>';
 }
 
 $conn->close();
 }    
 ?>
         
-<body>
+</body>

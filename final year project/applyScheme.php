@@ -109,7 +109,7 @@ $query = "INSERT INTO `applications`(`sch_id`, `username`, `name`, `age`, `email
 
 if ($conn->query($query) === TRUE) 
 {
-    echo '<script>alert("Scholarship Applied successfully!"); window.location.href = "adminDashboard.php";</script>';
+    echo '<script>alert("Scholarship Applied successfully!"); window.location.href = "schemes.php";</script>';
     exit();
 } 
 else 

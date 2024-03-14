@@ -147,9 +147,3 @@ if ($sql->num_rows > 0) {
     </div>
 </body>
 </html>
-<script type="text/javascript">
-    function ddd()
-    {
-        document.getElementById(edit_page).style.display="block";
-    }  
-</script>
