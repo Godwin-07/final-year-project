@@ -39,13 +39,15 @@ if ($sql->num_rows > 0) {
         style="font-family: Arial;
                 display:flex;
                 padding:10px;
-                justify-content:space-around;">
+                justify-content:space-around;
+                min-height: 250px;">
     
     <div style="font-family: Arial;
                 display:flex;
                 flex-direction: column;
                 justify-content:space-around;
-                max-width:370px;">      
+                max-width:550px;
+                height:fit-content">      
         <div 
         style=
         "font-size:25px;
