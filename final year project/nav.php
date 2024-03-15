@@ -11,7 +11,7 @@
             <li><a href="schemes.php">Schemes</a></li>
             <li><a href="#">Contacts</a></li>
             <li><a href="admin.php">Admin</a></li>
-           <a href="signin.php"> <button class="signup" href="#">Sign up</button></a>
+           <a href="test.php"> <button class="signup">Sign up</button></a>
            </ul>
        </nav> 
     </header>
