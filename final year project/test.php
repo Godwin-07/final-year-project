@@ -71,7 +71,7 @@ if (!empty($name) && !empty($email) && !empty($username) && !empty($ph) && !empt
     $query = "INSERT INTO test(name,email,username,phon_no,password) VALUES ('$name', '$email', '$username', '$ph', '$password')";
 
     if ($conn->query($query) === TRUE) {
-        echo '<script>alert("Account created successfully!"); window.location.href = "schemes.php";</script>';
+        echo '<script>alert("Account created successfully!"); window.location.href = "login.php";</script>';
         exit();
     } else {
         echo "Error: " . $query . "<br>" . $conn->error;
