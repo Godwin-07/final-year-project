@@ -11,5 +11,5 @@
     { die("Connection failed: " . $conn->connect_error); }
         $id= $_GET['id'];
         $delete_query = mysqli_query($conn,"DELETE FROM schemes WHERE sch_id ='$id'");
-        echo '<script>alert("Scheme Deleted!"); window.location.href = "adminDashboard.php";</script>';
+        echo '<script>alert("Scheme Deleted!"); window.location.href = "clerkDashboard.php";</script>';
 ?>

@@ -4,7 +4,9 @@
         <link rel="stylesheet" href="signin.css">
     </head>
     <body>
-    <div class="container">
+    <?php include 'nav.php'; ?>
+    <div class="bdy"> 
+    <div class="container" style="margin-top:50px">
       <h2 class="form-title">Registration</h2>
         <form class="form" method="POST">
         <div class="main-user-info">
@@ -46,7 +48,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $servername = 'localhost';
     $user_name = 'root';
     $pass_word = '';
-    $dbname = 'test';
+    $dbname = 'scholarshipmanagement';
 
     $conn = new mysqli($servername, $user_name, $pass_word, $dbname);
 
@@ -68,7 +70,7 @@ if(isset($_POST['submit']))
 // Basic input validation - you should implement more robust validation
 if (!empty($name) && !empty($email) && !empty($username) && !empty($ph) && !empty($password) && ($password == $ConfirmPassword)) 
 {
-    $query = "INSERT INTO test(name,email,username,phon_no,password) VALUES ('$name', '$email', '$username', '$ph', '$password')";
+    $query = "INSERT INTO `std_reg_info`(name,email,username,phon_no,password) VALUES ('$name', '$email', '$username', '$ph', '$password')";
 
     if ($conn->query($query) === TRUE) {
         echo '<script>alert("Account created successfully!"); window.location.href = "login.php";</script>';

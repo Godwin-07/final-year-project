@@ -7,7 +7,7 @@
 <body id="temp">
     <?php include 'nav.php';?>
     <br><br>
-   <center> <div class="h">Schemes</div></center>
+   <center> <div class="h">Applications</div></center>
     <div class="table">
          
         <div class="list">
@@ -77,6 +77,26 @@ if ($sql->num_rows > 0) {
     color:#0c0c0d;
     cursor: pointer;"
     >see more</button></a>
+
+  <!--<a href="approve.php?id=<?= $row['sch_id'] ?>"><button
+    style="padding: 7px 15px;
+    border-style: none;
+    border-radius: 7px;
+    font-size: medium;
+    background-color: rgb(1, 179, 239);
+    color:#0c0c0d;
+    cursor: pointer;"
+    >see more</button></a>
+
+    <a href="profile.php?id=<?= $row['sch_id'] ?>"><button
+    style="padding: 7px 15px;
+    border-style: none;
+    border-radius: 7px;
+    font-size: medium;
+    background-color: rgb(1, 179, 239);
+    color:#0c0c0d;
+    cursor: pointer;"
+    >see more</button></a> -->
 
     </div>
     </div>

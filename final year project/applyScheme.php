@@ -70,10 +70,6 @@ if ($conn->connect_error)
             <label for="country">Country</label>
             <input type="text" id="country" name="country" placeholder="Enter country Here"/>
           </div>
-          <div class="user-input-box">
-            <label for="adhar">Adhar</label>
-            <input type="file" id="adhar" name="adhar" placeholder="click Here"/>
-          </div>
           <div><input style="width:90px" class="submit-btn" type="submit" name="apply_submit">
         </div> 
         </div>
@@ -109,7 +105,7 @@ if ($conn->connect_error)
 // Basic input validation - you should implement more robust validation
 if (!empty($sch_id) && !empty($username) && !empty($name) && !empty($age) && !empty($email) && !empty($gender)&& !empty($caste)&& !empty($houseno)&& !empty($streetname)&& !empty($city)&& !empty($state)&& !empty($country)) 
 {
-$query = "INSERT INTO `applications`(`sch_id`, `username`, `name`, `age`, `email`, `gender`, `caste`, `houseNo`, `streetName`, `city`, `state`, `country`,`adharCard`) VALUES ('$sch_id','$username','$name','$age','$email','$gender','$caste','$houseno','$streetname','$city','$state','$country','{$_FILES['uploadimage']['name']}')";
+$query = "INSERT INTO `applications`(`sch_id`, `username`, `name`, `age`, `email`, `gender`, `caste`, `houseNo`, `streetName`, `city`, `state`, `country`) VALUES ('$sch_id','$username','$name','$age','$email','$gender','$caste','$houseno','$streetname','$city','$state','$country')";
 
 if ($conn->query($query) === TRUE) 
 {

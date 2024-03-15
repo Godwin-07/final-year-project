@@ -26,7 +26,7 @@
   </table>
   <table width="100%" border="0">
     <tr>
-      <th scope="col"><a href="adminhome.php">Admin Home</a></th>
+      <th scope="col"><a href="clerkhome.php">clerk Home</a></th>
       <th scope="col"><a href="viewr.php">View Registration</a></th>
 	 <th scope="col"><a href="viewu.php">ViewUsers</a></th>
 	  <th scope="col"><a href="issue.php">Issue Cerificate</a></th>

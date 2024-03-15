@@ -95,7 +95,7 @@ if (!empty($sch_name) && !empty($sch_id) && !empty($description) && !empty($offe
 {
 $query = "UPDATE `schemes` SET `sch_name`='$sch_name',`sch_id`='$sch_id',`description`='$description',`offeredby`='$offeredby',`start_date`= '$start_date',`last_date`='$last_date',`eligibility`='$eligiblity' where sch_id='$id' ";
 if ($conn->query($query) === TRUE) {
-echo '<script>alert("Scholarship Scheme Edited successfully!"); window.location.href = "adminDashboard.php";</script>';
+echo '<script>alert("Scholarship Scheme Edited successfully!"); window.location.href = "clerkDashboard.php";</script>';
 exit();
 } else {
 echo "Error: " . $query . "<br>" . $conn->error;

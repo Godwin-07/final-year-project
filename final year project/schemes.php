@@ -2,7 +2,17 @@
 <head>
     <link rel="stylesheet" href="template.css">
 </head>
-
+<?php
+session_start();
+if(isset($_SESSION['uname']))
+{
+    
+}
+else
+{
+    echo '<script>alert("your not logged in");window.location.href = "homepage.php";</script';
+}
+?>
 
 <body id="temp">
     <?php include 'nav.php';?>

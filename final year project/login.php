@@ -34,7 +34,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $servername = 'localhost';
     $user_name = 'root';
     $pass_word = '';
-    $dbname = 'test';
+    $dbname = 'scholarshipmanagement';
 
     $con = new mysqli($servername, $user_name, $pass_word, $dbname);
 
@@ -53,9 +53,11 @@ if(isset($_POST['submit']))
 // Basic input validation - you should implement more robust validation
 if (!empty($uname) && !empty($pasword))
 {
-  $query = mysqli_query($con,"SELECT * FROM test WHERE username='$uname' AND password = '$pasword'");
+  $query = mysqli_query($con,"SELECT * FROM std_reg_info WHERE username='$uname' AND password = '$pasword'");
 
     if($query ->num_rows > 0) {
+        session_start();
+        $_SESSION['uname'] = $uname;
         echo '<script>alert("Login successfull !"); window.location.href = "schemes.php";</script>';
         exit();
     } else {

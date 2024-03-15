@@ -1,7 +1,18 @@
 <!DOCTYPE html>
 <head>
-<link rel="stylesheet" href="adminDashboard.css">
+<link rel="stylesheet" href="clerkDashboard.css">
 </head>
+<?php
+session_start();
+if(isset($_SESSION['adname']))
+{
+    
+}
+else
+{
+    echo '<script>alert("your not logged in as admin");window.location.href = "homepage.php";</script>';
+}
+?>
 <body>
     <?php include 'nav.php';?>
     <div class="main">

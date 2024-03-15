@@ -41,7 +41,8 @@
         </div>
 
 <?php
-if ($_SERVER["REQUEST_METHOD"] === "POST") {
+if ($_SERVER["REQUEST_METHOD"] === "POST") 
+{
 $servername = 'localhost';
 $user_name = 'root';
 $pass_word = '';
@@ -52,7 +53,8 @@ $conn = new mysqli($servername, $user_name, $pass_word, $dbname);
 if ($conn->connect_error) 
 { 
   die("Connection failed: " . $conn->connect_error); 
-  } }
+  } 
+}
    
   if(isset($_POST['add_submit']))
     {
@@ -71,10 +73,11 @@ $query = "INSERT INTO `schemes`(`sch_name`, `sch_id`, `description`, `offeredby`
 
 if ($conn->query($query) === TRUE) 
 {
-    echo '<script>alert("Scheme Added successfully!"); window.location.href = "adminDashboard.php";</script>';
-    exit();
+    echo '<script>alert("Scheme Added successfully!"); window.location.href = "clerkDashboard.php";</script>';
+
 } 
-else {
+else 
+{
   echo '<script>alert("Scheme Added successfully!");</script>';
 }
 } 
