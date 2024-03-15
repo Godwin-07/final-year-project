@@ -56,7 +56,7 @@ if (!empty($uname) && !empty($pasword))
   $query = mysqli_query($con,"SELECT * FROM test WHERE username='$uname' AND password = '$pasword'");
 
     if($query ->num_rows > 0) {
-        echo '<script>alert("Login successfull !"); window.location.href = "homepage.php";</script>';
+        echo '<script>alert("Login successfull !"); window.location.href = "schemes.php";</script>';
         exit();
     } else {
         echo '<script>alert("Login failed !"); window.location.href = "login.php";</script>';
