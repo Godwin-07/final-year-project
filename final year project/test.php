@@ -35,7 +35,7 @@
           <div><input class="submit-btn" type="submit" name="submit">
         </div> 
         <p>if you already have an account 
-          <a href="#">login here</a></p>
+          <a href="login.php">login here</a></p>
         </div>
         </form>
         </div>
@@ -71,7 +71,7 @@ if (!empty($name) && !empty($email) && !empty($username) && !empty($ph) && !empt
     $query = "INSERT INTO test(name,email,username,phon_no,password) VALUES ('$name', '$email', '$username', '$ph', '$password')";
 
     if ($conn->query($query) === TRUE) {
-        echo '<script>alert("Account created successfully!"); window.location.href = "homepage.php";</script>';
+        echo '<script>alert("Account created successfully!"); window.location.href = "schemes.php";</script>';
         exit();
     } else {
         echo "Error: " . $query . "<br>" . $conn->error;
