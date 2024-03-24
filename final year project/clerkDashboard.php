@@ -29,7 +29,7 @@ Menu</u></h><hr color="grey" width="200px">
  </div>
     </div>
     <div class="view">
-        My Page
+        <u>Clerk Dashboard</u>
         <hr>
         <!-------------------schemes------------------->
 
